@@ -27,4 +27,4 @@ obj.makeCount = function(){
 console.log("Hiyafgrss".makeBig()
                        .reverse()
                        .makeCount()
-           );
+           );    // 9
