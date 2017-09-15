@@ -38,4 +38,4 @@ obj.capitalize = function(){
 console.log("giant squid".capitalize());
 console.log("pasture".reverseString());
 console.log("livestock".capitalize().reverseString());
-console.log("animals").reverseString().capitalize();
+console.log("animals".reverseString().capitalize());
