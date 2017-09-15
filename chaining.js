@@ -3,20 +3,28 @@ var obj = Object.prototype;
 
 // Make custom method "reverseString"
 obj.reverseString = function(){
-  var k = this.split("");
-  var j = k.reverse();
-  return String(j).replace(/,/g, "");
+  if(String(this) === ""){
+    return "Error: empty string.";
+  }else{
+    var stringToArray = this.split(""); // Turn the string into an array
+    var reversedArray = stringToArray.reverse();    // Use the reverse array method to flip the contents of the string
+    return String(reversedArray).replace(/,/g, ""); // Remove all the commas and return the new string
+  }
 }
+
 
 // Make a custom method "capitalize"
 obj.capitalize = function(){
-  var l = this.toLowerCase();
-  var k = l.split("");
-  k[0] = k[0].toUpperCase();
-  return String(k).replace(/,/g, "");
+  if(String(this) === ""){
+    return "Error: empty string.";
+  }else{
+    var entireStringToLower = this.toLowerCase();
+    var stringIntoArray = entireStringToLower.split("");
+    stringIntoArray[0] = stringIntoArray[0].toUpperCase();
+    return String(stringIntoArray).replace(/,/g, "");
+  }
 }
 
 
-
-console.log("MaDmAn".reverseString().capitalize());
-console.log("DisaPPear".capitalize());
+console.log("".capitalize());
+console.log("".reverseString().capitalize());
