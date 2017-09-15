@@ -29,13 +29,13 @@ obj.capitalize = function(){
     var stringIntoArray = entireStringToLower.split("");
     // Change the element in the [0] index into uppercase
     stringIntoArray[0] = stringIntoArray[0].toUpperCase();
-    // Remove all the commas and converting the casting the array into a string
+    // Remove all the commas and cast into a string
     return String(stringIntoArray).replace(/,/g, "");
   }
 }
 
 // Test-drive
-console.log("giant squid".capitalize());
-console.log("pasture".reverseString());
-console.log("livestock".capitalize().reverseString());
-console.log("animals".reverseString().capitalize());
+console.log("giant squid".capitalize()); // "Giant squid"
+console.log("pasture".reverseString());  // "erutsap"
+console.log("livestock".capitalize().reverseString()); // "kcotseviL"
+console.log("animals".reverseString().capitalize()); // "Slamina"
