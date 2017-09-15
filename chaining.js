@@ -35,5 +35,7 @@ obj.capitalize = function(){
 }
 
 // Test-drive
-console.log("".capitalize());
-console.log("".reverseString().capitalize());
+console.log("giant squid".capitalize());
+console.log("pasture".reverseString());
+console.log("livestock".capitalize().reverseString());
+console.log("animals").reverseString().capitalize();
