@@ -5,7 +5,7 @@ var obj = Object.prototype;
 obj.reverseString = function(){
   // Check to see if the given string is empty or not
   if(String(this) === ""){
-    return "Error: empty string.";
+    return "Error: empty string or incompatible data type.";
   }else{
     // Turn the string into an array
     var stringToArray = this.split("");
@@ -21,7 +21,7 @@ obj.reverseString = function(){
 obj.capitalize = function(){
   // Check to see if the given string is empty or not
   if(String(this) === ""){
-    return "Error: empty string.";
+    return "Error: empty string or incompatible data type.";
   }else{
     // Turn the given string into all lowercase first
     var entireStringToLower = this.toLowerCase();
